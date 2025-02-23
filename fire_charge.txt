@@ -1,0 +1,11 @@
+[ 반복 , 무조건부 , 항상 , 틱 0 ]
+execute as @a[hasitem={item=fire_charge}] at @s run tag @s add fire
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+execute as @a[tag=fire] at @s run tellraw @s {"rawtext":[{"text":"§e"},{"selector":"@s"},{"text":"§f님이 §g화염구§f를 §a꺼냈습니다"}]}
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+clear @a[tag=fire] fire_charge
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+tag @a[tag=fire] remove fire
