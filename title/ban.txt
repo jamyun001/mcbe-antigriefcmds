@@ -1,0 +1,8 @@
+[ 반복 , 무조건부 , 항상 , 틱 0 ]
+execute as @a at @s run titleraw @s actionbar {"rawtext":[{"text":"§e닉네임 §f: "},{"selector":"@s"},{"text":"\n"},{"text":"§4경고 §f: "},{"score":{"name":"@s","objective":"danger"}},{"text":" / 10"}]}
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+scoreboard players add @a danger 0
+
+[ 체인 , 무조건부 , 항상 , 틱 0 
+execute as @a[scores={danger=10..}] at @s run kick @s "§4테러§f를 §a시도§f 했기 때문에 §c킥§f을 당하셨습니다"
