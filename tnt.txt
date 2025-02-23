@@ -1,4 +1,11 @@
-[ 반복 , 무조건부 , 항상 ]
+[ 반복 , 무조건부 , 항상 , 틱 0 ]
 execute as @a[hasitem={item=tnt}] at @s run tag @s add tnt
 
-[ 체인 , 무조건부 , 항상 ]
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+execute as @a[tag=tnt] at @s run tellraw @s {"rawtext":[{"text":"§e"},{"selector":"@s"},{"text":"§f님이 §4tnt§f를 §a꺼냈습니다"}]}
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+clear @a[tag=tnt] tnt
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+tag @a[tag=tnt] remove tnt
