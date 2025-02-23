@@ -1,0 +1,2 @@
+1. /scoreboard objectives add danger dummy
+2. /gamerule commandblockoutput false
