@@ -1,1 +1,4 @@
+[ 반복 , 무조건부 , 항상 ]
+execute as @a[hasitem={item=tnt}] at @s run tag @s add tnt
 
+[ 체인 , 무조건부 , 항상 ]
