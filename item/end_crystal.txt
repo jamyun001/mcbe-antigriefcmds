@@ -1,0 +1,11 @@
+[ 반복 , 무조건부 , 항상 , 틱 0 ]
+execute as @a[hasitem={item=end_crystal}] at @s run tag @s add end
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+execute as @a[tag=end] at @s run tellraw @s {"rawtext":[{"text":"§e"},{"selector":"@s"},{"text":"§f님이 §9엔드 크리스탈§f을 §a꺼냈습니다"}]}
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+clear @a[tag=end] end_crystal
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+tag @a[tag=end] remove end
