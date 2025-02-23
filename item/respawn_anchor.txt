@@ -1,0 +1,11 @@
+[ 반복 , 무조건부 , 항상 , 틱 0 ]
+execute as @a[hasitem={item=respawn_anchor}] at @s run tag @s add res
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+execute as @a[tag=res] at @s run tellraw @s {"rawtext":[{"text":"§e"},{"selector":"@s"},{"text":"§f님이 §1리스폰 정박기§f를 §a꺼냈습니다"}]}
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+clear @a[tag=res] respawn_anchor
+
+[ 체인 , 무조건부 , 항상 , 틱 0 ]
+tag @a[tag=res] remove res
